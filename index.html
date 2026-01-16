@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Jokenpô</h1>
+        <div class="buttons">
+            <button class="rock" onclick="playhuman('rock')">✊</button>
+            <button class="paper" onclick="playhuman('paper')">✋</button>
+            <button class="scissors" onclick="playhuman('scissors')">✌️</button>
+        </div>
+        <p class="result"></p>
+        <img id="reaction">
+
+        <p class="yourscore">Sua pontuação <span id="yourscore">0</span></p>
+        <p class="machinescore">Pontuação da máquina<span id="machinescore">0</span></p>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
