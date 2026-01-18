@@ -3,6 +3,9 @@ const yourscore = document.querySelector("#yourscore")
 const machinescore = document.querySelector("#machinescore")
 const reaction = document.querySelector("#reaction")
 
+const empatevalue = document.querySelector("#empatevalue")
+
+let empatenumber = 0
 let humanscorenumber = 0
 let machinescorenumber = 0
 
@@ -24,6 +27,8 @@ const playthegame = (human, machine) => {
     if (human === machine) {
         result.innerHTML = "Deu empate!"
         reaction.src = "loled-serioused-emoji-silly-emoji.mp4"
+        empatenumber++
+        empatevalue.innerHTML = empatenumber
     } else if (
         (human === 'paper' && machine === 'rock') ||
         (human === 'rock' && machine === 'scissors') ||

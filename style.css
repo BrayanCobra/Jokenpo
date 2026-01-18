@@ -64,6 +64,10 @@ color: rgb(79, 79, 160);
     color: rgb(177, 57, 57);
 }
 
+.empates span {
+    color: rgb(77, 77, 77);
+}
+
 #reaction {
     width: 50px;
 }
